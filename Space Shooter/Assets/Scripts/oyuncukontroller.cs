@@ -16,14 +16,30 @@ public class oyuncukontroller : MonoBehaviour
 
     [SerializeField] int hýz;
     [SerializeField] int tilt;
+    [SerializeField] float nextFire;
+    [SerializeField] float FireRate;
 
     public Boundary boundary;
+    public GameObject shot;
+    public GameObject shotspawn;
+
+
+
+
     void Start()
     {
      physic=GetComponent<Rigidbody>();   
     }
 
-
+    void Update()
+    {
+        Debug.Log(Time.time);
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
+        {
+            nextFire= Time.time + FireRate;
+            Instantiate(shot, shotspawn.transform.position, shotspawn.transform.rotation);
+        }
+    }
     void FixedUpdate()
     {
         float moveHorizontal = Input.GetAxis("Horizontal");
