@@ -346,8 +346,11 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/DestroyByBoundry.cs"
+"Assets/Scripts/DestroyByContent.cs"
+"Assets/Scripts/Gamecontoller.cs"
 "Assets/Scripts/mover.cs"
 "Assets/Scripts/oyuncukontroller.cs"
+"Assets/Scripts/randomrotater.cs"
 -langversion:9.0
 
 /deterministic

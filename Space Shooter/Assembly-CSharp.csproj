@@ -58,7 +58,10 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\DestroyByBoundry.cs" />
     <Compile Include="Assets\Scripts\oyuncukontroller.cs" />
+    <Compile Include="Assets\Scripts\DestroyByContent.cs" />
+    <Compile Include="Assets\Scripts\randomrotater.cs" />
     <Compile Include="Assets\Scripts\mover.cs" />
+    <Compile Include="Assets\Scripts\Gamecontoller.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
